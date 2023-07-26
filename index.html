@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Nekita Surman UI Design Portfolio (Montreal)</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"
+    />
+    <!-- Googlefont link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,300;0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div class="container blue circleBehind">
+          <div class="navtoggle" id="myNavtoggle">
+            <img src="logo.svg" alt="logo" class="logo" />
+            <!-- For the navigation-->
+            <nav>
+              <ul style="margin: 0">
+                <li>
+                  <a href="index.html">Work</a>
+                </li>
+                <li>
+                  <a href="about.html">About</a>
+                </li>
+                <li>
+                  <a href="#contact" onclick="menuToggle()">Contact</a>
+                </li>
+                <li>
+                  <a
+                    href="javascript:void(0);"
+                    class="icon"
+                    onclick="menuToggle()"
+                    ><i class="fas fa-bars"></i
+                  ></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- For the hero section -->
+      <div id="hero">
+        <div class="container">
+          <h2 class="text-center">
+            Hi (Bonjour!), I'm Nekita Surman a UX/UI designer specializing in UI
+            design based in Montreal, Canada.
+          </h2>
+        </div>
+      </div>
+
+      <!-- projects -->
+
+      <div id="work">
+        <div class="container">
+          <h2 class="text-center">My Work</h2>
+          <div>
+            <div class="row">
+              <div class="column col-md-6 col-lg-7">
+                <picture>
+                  <source
+                    srcset="img/power_up/coverm.jpg"
+                    media="(max-width:767px)"
+                  />
+                  <img
+                    src="img/power_up/coverd.jpg"
+                    alt="coverpage for productivity app"
+                  />
+                </picture>
+              </div>
+              <!-- end column -->
+
+              <div class="column col-md-6 col-lg-5">
+                <h2>Power-Up</h2>
+                <!-- <p>
+                  Power-Up, the user-friendly habit tracker app, incorporates a
+                  unique feature offering three distinct productivity levels.
+                  This design allows users to seamlessly balance their to-do
+                  lists and add new habits, fostering a balanced and productive
+                  lifestyle.
+                </p> -->
+                <p>
+                  Using mood boards to brainstorm ideas on the design and
+                  testing user preferences between two main styles helped me
+                  hone in on my current design for the productivity app.
+                </p>
+                <div>
+                  <a href="powerup.html" class="button">
+                    View Case Study
+                    <div class="transition"></div>
+                  </a>
+                </div>
+              </div>
+              <!-- end column -->
+            </div>
+            <!-- end row -->
+
+            <div class="row">
+              <div class="column col-md-6 col-lg-7">
+                <picture>
+                  <source
+                    srcset="img/skin_remedy/mobile.jpg"
+                    media="(max-width:767px)"
+                  />
+                  <img
+                    src="img/skin_remedy/desktop.jpg"
+                    alt="coverpage for skin care app"
+                  />
+                </picture>
+              </div>
+              <!-- end column -->
+
+              <div class="column col-md-6 col-lg-5">
+                <h2>Skin Remedy</h2>
+                <!-- <p>
+                  Skin Remedy, a skincare app, was designed to focus on
+                  ingredient compatibility. Through in-depth research and
+                  analysis, the app provides users personalized recommendations,
+                  helping them navigate the complex world of skincare
+                  ingredients and find the perfect remedies for their skin.
+                </p> -->
+
+                <p>
+                  Prototype testing the high-fidelity mobile frames with five
+                  testers gave me helpful feedback to improve the design and
+                  functionality of the app.
+                </p>
+
+                <div>
+                  <a href="skinremedy.html" class="button">
+                    View Case Study
+                    <div class="transition"></div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="column col-md-6 col-lg-7">
+                <picture>
+                  <source
+                    srcset="img/finance_boost/coverm.jpg"
+                    media="(max-width:767px)"
+                  />
+                  <img
+                    src="img/finance_boost/coverd.jpg"
+                    alt="coverpage for finance boost"
+                  />
+                </picture>
+              </div>
+
+              <!-- end column -->
+
+              <div class="column col-md-6 col-lg-5">
+                <h2>Finance Boost</h2>
+                <p>
+                  I designed a brand guideline for a money-saving app to help
+                  navigate the UI design for a mobile and desktop app.
+                </p>
+
+                <div>
+                  <a href="financeboost.html" class="button">
+                    View Case Study
+                    <div class="transition"></div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- end column -->
+          </div>
+          <!-- row -->
+        </div>
+        <!--end container-->
+      </div>
+    </main>
+
+    <footer id="contact">
+      <div class="container">
+        <h2>Get in Touch</h2>
+        <p>Like my work and want to discuss opportunities? Let's connect!</p>
+        <div>
+          <a href="mailto:nekitalucy2015@gmail.com" class="button-contact"
+            >Send me an email</a
+          >
+          <div>
+            <!--Social Media Layout-->
+            <a
+              href="https://www.linkedin.com/in/nekita-surman/"
+              target="_blank"
+            >
+              <!-- Linkedin -->
+              <img src="linkedin.svg" alt="linkedin icon" class="linkedin" />
+            </a>
+            <!--Social Media Layout-->
+            <a href="https://www.behance.net/nekilucy" target="_blank">
+              <!-- behance-->
+              <img src="behance.svg" alt="Behance icon" class="behance" />
+            </a>
+            <!-- <a href="https://dribbble.com/Nekita_Lu" target="_blank">
+                        Dribble need to add the case studies onto dribble first-->
+            <!-- <img src="dribble.svg" alt="Dribble icon" class="dribble">
+                    </a> -->
+          </div>
+        </div>
+      </div>
+      <p>Copyright Nekita Surman 2020</p>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/4bf344f202.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

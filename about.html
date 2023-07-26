@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>About Nekita</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"
+    />
+    <!-- Googlefont link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,300;0,400;0,500;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div class="container blue circleBehind">
+          <div class="navtoggle" id="myNavtoggle">
+            <img src="logo.svg" alt="logo" class="logo" />
+            <!-- For the navigation-->
+            <nav>
+              <ul style="margin: 0">
+                <li>
+                  <a href="index.html">Work</a>
+                </li>
+                <li>
+                  <a href="about.html">About</a>
+                </li>
+                <li>
+                  <a href="#contact" onclick="menuToggle()">Contact</a>
+                </li>
+                <li>
+                  <a
+                    href="javascript:void(0);"
+                    class="icon"
+                    onclick="menuToggle()"
+                    ><i class="fas fa-bars"></i
+                  ></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div id="about">
+        <div class="container">
+          <div class="row">
+            <h1>About</h1>
+            <picture>
+              <source
+                srcset="img/profile_pic/dprofilepic.jpg"
+                media="(max-width:767px)"
+              />
+              <img
+                src="img/profile_pic/mprofilepic.jpg"
+                class="profilepic"
+                alt="Profile Picture"
+              />
+            </picture>
+            <div class="column col-md-6 col-lg-7">
+              <h1>Nekita Lucy Surman</h1>
+              <p>
+                Hello, I'm Nekita Surman, a UX/UI designer specializing in UI
+                design. What sets me apart is my 10 years of experience in
+                customer service and communications. I have a human-centred
+                approach to UI design. As a designer, I am passionate about
+                creating experiences that provide functional value and are loved
+                by the users.
+              </p>
+
+              <h1>Why I'm passionate about UI</h1>
+              <p>
+                I am passionate about UI Design because it merges the realms of
+                creativity and functionality in a harmonious way. I enjoy
+                crafting visually stunning and intuitive interfaces that enhance
+                user experiences. UI Design enables me to blend my artistic
+                flair with problem-solving skills.
+              </p>
+
+              <h1>Origin Story</h1>
+              <p>
+                I was born in Seychelles, spent most of my childhood in Rwanda,
+                and spent my formative years in Montreal, Canada, where I
+                currently reside. It was here that I discovered my passion for
+                art, culture, and creativity.
+              </p>
+
+              <p>
+                Throughout my nomadic journey, I have developed strong
+                adaptability skills. I have learned to embrace change, navigate
+                unfamiliar territories, and forge connections with people from
+                diverse backgrounds. These experiences have cultivated my
+                resilience, flexibility, and open-mindedness, enabling me to
+                approach new challenges with curiosity and enthusiasm.
+              </p>
+
+              <a href="files/cv.pdf" target="_blank" class="button">
+                View my CV</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div>
+              <div class="column col-md-6">
+                <h3>Skills</h3>
+                <ul>
+                  <li>Wireframing</li>
+                  <li>Digital art: Procreate</li>
+                  <li>User Research</li>
+                  <li>Responsive Design</li>
+                  <li>Prototyping</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <h3>Tools</h3>
+              <ul>
+                <li>AdobeXD</li>
+                <li>Figma</li>
+                <li>Procreate</li>
+                <li>VsCode</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer id="contact">
+      <div class="container">
+        <h2>Get in Touch</h2>
+        <p>Like my work and want to discuss opportunities? Let's connect!</p>
+        <div>
+          <a href="mailto:nekitalucy2015@gmail.com" class="button-contact"
+            >Send me an email</a
+          >
+          <div>
+            <!--Social Media Layout-->
+            <a
+              href="https://www.linkedin.com/in/nekita-surman/"
+              target="_blank"
+            >
+              <!-- Linkedin -->
+              <img src="linkedin.svg" alt="linkedin icon" class="linkedin" />
+            </a>
+            <!--Social Media Layout-->
+            <a href="https://www.behance.net/nekilucy" target="_blank">
+              <!-- behance-->
+              <img src="behance.svg" alt="Behance icon" class="behance" />
+            </a>
+            <!-- <a href="https://dribbble.com/Nekita_Lu" target="_blank">
+                        Dribble need to add the case studies onto dribble first-->
+            <!-- <img src="dribble.svg" alt="Dribble icon" class="dribble">
+                    </a> -->
+          </div>
+        </div>
+      </div>
+      <p>Copyright Nekita Surman 2020</p>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/4bf344f202.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
