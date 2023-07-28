@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+< lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -23,33 +23,80 @@
   <body>
     <header>
       <div class="container">
-        <div class="container blue circleBehind">
-          <div class="navtoggle" id="myNavtoggle">
-            <img src="logo.svg" alt="logo" class="logo" />
-            <!-- For the navigation-->
-            <nav>
-              <ul style="margin: 0">
-                <li>
-                  <a href="index.html">Work</a>
-                </li>
-                <li>
-                  <a href="about.html">About</a>
-                </li>
-                <li>
-                  <a href="#contact" onclick="menuToggle()">Contact</a>
-                </li>
-                <li>
-                  <a
-                    href="javascript:void(0);"
-                    class="icon"
-                    onclick="menuToggle()"
-                    ><i class="fas fa-bars"></i
-                  ></a>
-                </li>
-              </ul>
-            </nav>
-          </div>
+        <div class="navtoggle" id="myNavtoggle">
+          <img src="logo.svg" alt="logo" class="logo" />
+          <!-- For the navigation-->
+          <nav class="nav-bar">
+            <ul style="margin: 0">
+              <li>
+                <a href="index.html">Work</a>
+              </li>
+              <li>
+                <a href="about.html">About</a>
+              </li>
+              <li>
+                <a href="#contact" onclick="menuToggle()">Contact</a>
+              </li>
+              <li>
+                <a
+                  href="javascript:void(0);"
+                  class="icon"
+                  onclick="menuToggle()"
+                  ><i class="fas fa-bars"></i
+                ></a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
     </header>
+
+<main>
+  </main>
+
+    <footer id="contact">
+      <div class="container">
+        <h2>Get in Touch</h2>
+        <p class="text-center">
+          Like my work and want to discuss opportunities? Let's connect!
+        </p>
+        <div>
+          <a href="mailto:nekitalucy2015@gmail.com" class="button-contact"
+            >Send me an email</a
+          >
+          <div>
+            <!--Social Media Layout-->
+            <a
+              href="https://www.linkedin.com/in/nekita-surman/"
+              target="_blank"
+            >
+              <!-- Linkedin -->
+              <img src="linkedin.svg" alt="linkedin icon" class="linkedin" />
+            </a>
+            <!--Social Media Layout-->
+            <a href="https://www.behance.net/nekilucy" target="_blank">
+              <!-- behance-->
+              <img src="behance.svg" alt="Behance icon" class="behance" />
+            </a>
+            <!-- <a href="https://dribbble.com/Nekita_Lu" target="_blank">
+                        Dribble need to add the case studies onto dribble first-->
+            <!-- <img src="dribble.svg" alt="Dribble icon" class="dribble">
+                    </a> -->
+          </div>
+        </div>
+      </div>
+      <p class="text-center">Copyright Nekita Surman 2020</p>
+    </footer>
+    <script
+    src="https://code.jquery.com/jquery-3.7.0.min.js"
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://kit.fontawesome.com/4bf344f202.js"
+    crossorigin="anonymous"
+  ></script>
+  <script src="js/scripts.js"></script>
+</body>
+
 </html>

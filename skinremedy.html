@@ -23,32 +23,30 @@
   <body>
     <header>
       <div class="container">
-        <div class="container blue circleBehind">
-          <div class="navtoggle" id="myNavtoggle">
-            <img src="logo.svg" alt="logo" class="logo" />
-            <!-- For the navigation-->
-            <nav>
-              <ul style="margin: 0">
-                <li>
-                  <a href="index.html">Work</a>
-                </li>
-                <li>
-                  <a href="about.html">About</a>
-                </li>
-                <li>
-                  <a href="#contact" onclick="menuToggle()">Contact</a>
-                </li>
-                <li>
-                  <a
-                    href="javascript:void(0);"
-                    class="icon"
-                    onclick="menuToggle()"
-                    ><i class="fas fa-bars"></i
-                  ></a>
-                </li>
-              </ul>
-            </nav>
-          </div>
+        <div class="navtoggle" id="myNavtoggle">
+          <img src="logo.svg" alt="logo" class="logo" />
+          <!-- For the navigation-->
+          <nav class="nav-bar">
+            <ul style="margin: 0">
+              <li>
+                <a href="index.html">Work</a>
+              </li>
+              <li>
+                <a href="about.html">About</a>
+              </li>
+              <li>
+                <a href="#contact" onclick="menuToggle()">Contact</a>
+              </li>
+              <li>
+                <a
+                  href="javascript:void(0);"
+                  class="icon"
+                  onclick="menuToggle()"
+                  ><i class="fas fa-bars"></i
+                ></a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
     </header>
@@ -446,7 +444,9 @@
     <footer id="contact">
       <div class="container">
         <h2>Get in Touch</h2>
-        <p>Like my work and want to discuss opportunities? Let's connect!</p>
+        <p class="text-center">
+          Like my work and want to discuss opportunities? Let's connect!
+        </p>
         <div>
           <a href="mailto:nekitalucy2015@gmail.com" class="button-contact"
             >Send me an email</a
@@ -466,13 +466,13 @@
               <img src="behance.svg" alt="Behance icon" class="behance" />
             </a>
             <!-- <a href="https://dribbble.com/Nekita_Lu" target="_blank">
-                              Dribble need to add the case studies onto dribble first-->
+                        Dribble need to add the case studies onto dribble first-->
             <!-- <img src="dribble.svg" alt="Dribble icon" class="dribble">
-                          </a> -->
+                    </a> -->
           </div>
         </div>
       </div>
-      <p>Copyright Nekita Surman 2020</p>
+      <p class="text-center">Copyright Nekita Surman 2020</p>
     </footer>
     <script
       src="https://code.jquery.com/jquery-3.7.0.min.js"

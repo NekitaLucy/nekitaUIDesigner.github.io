@@ -8,6 +8,7 @@ Regular 400 Italic
 Medium 500
 SemiBold 600 */
 
+
 #menu {
   display: none;
 }
@@ -15,7 +16,6 @@ SemiBold 600 */
 nav > ul {
   font-family: "Barlow Condensed", sans-serif;
   font-style: light300;
-  text-transform: none;
   font-size: 17px;
   padding: 0;
   margin: 0;
@@ -24,73 +24,9 @@ nav > ul {
 nav > ul > li > a {
   font-family: "Barlow Condensed", thin, sans-serif;
   padding: 0 15px;
-  text-transform: capitalize; /* Use "capitalize" to capitalize the first letter */
-  font-size: 22px;
+  text-transform: uppercase;
+  font-size: 20px;
   color: #FAFAFA;
-}
-
-
-/* nav>ul>li>a {
-    : visited
-} */
-
-nav > ul > li > a {
-  padding: 0 15px;
-  text-align: right;
-  font-weight: 700;
-  width: 100%;
-}
-
-div.container
-{
-  margin: 0 auto;
-	padding: 1em 1em;
-	text-align: center;
-}
-
-div.container a
-{
-    text-decoration: none;
-    margin: 0px 10px;
-    padding: 10px 10px;
-    position: relative;
-    z-index: 0;
-    cursor: pointer;
-}
-
-div.circleBehind a:before, div.circleBehind a:after
-{
-    position: absolute;
-    top: 22px;
-    left: 50%;
-    width: 80px;
-    height: 80px;
-    border: 8px solid #FAFAFA;
-    transform: translateX(-50%) translateY(-50%) scale(0.8);
-    border-radius: 50%;
-    background: transparent;
-    content: "";
-    opacity: 0;
-    transition: all 0.3s;
-    z-index: -1;
-}
-
-div.circleBehind a:after
-{
-    border-width: 2px;
-    transition: all 0.4s;
-}
-
-div.circleBehind a:hover:before
-{
-    opacity: 1;
-    transform: translateX(-50%) translateY(-50%) scale(1);
-}
-
-div.circleBehind a:hover:after
-{
-    opacity: 1;
-    transform: translateX(-50%) translateY(-50%) scale(1.3);
 }
 
 .navtoggle,
@@ -105,6 +41,7 @@ div.circleBehind a:hover:after
   font-size: 20px;
   padding-right: 0;
 }
+
 
 .navtoggle li:not(:last-child) {
   display: none;
@@ -121,8 +58,7 @@ div.circleBehind a:hover:after
 .navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-  font-size: 18px;
-  border-top: 1px solid #FAFAFA;
+  border-top: 1px solid  #FAFAFA;
 }
 
 .navtoggle.responsive li:last-child {
@@ -133,7 +69,7 @@ div.circleBehind a:hover:after
   opacity: 0.9;
   /* Reduces the opacity of the button to 80% */
   text-decoration: none;
-  background-color: #FAFAFA;
+  background-color: #fafffb;
   font-family: "Barlow Condensed", sans-serif;
 }
 
@@ -142,22 +78,28 @@ div {
   transition: [transition-property] [transition-duration]
     [transition-timing-function] [transition-delay];
 
-
-
   .button {
     display: inline-block;
-    padding: 10px;
+    background-color: rgb(210, 210, 237);
+    font-size: 17px;
+    text-decoration: none;
+    padding: 15px;
     border-radius: 0.3px;
-    border-bottom: 2.5px solid  #e19797;
+    border-bottom: 2.5px solid #e19797;
     transition: 0.2s opacity;
     margin-top: auto;
     font-family: "Barlow Condensed", sans-serif;
+  }
+
+  .button {
     top: 5px;
     font-weight: 700;
     font-size: 17px;
     font-family: "Barlow Condensed", sans-serif;
+    text-transform: uppercase;
     letter-spacing: 1px;
     text-align: center;
+    border: 2.5px solid  #e19797;
     border-radius: 0.5px;
     position: relative;
     overflow: hidden;
@@ -171,9 +113,9 @@ div {
   }
 
   .button:hover {
-    font-size: 19px;
-    border: 5px solid #bc8dc5;
-    color: #FAFAFA;
+    font-size: 17px;
+    border: 1px solid #bc8dc5;
+    color: #131312d3;
     font-family: "Barlow Condensed", sans-serif;
   }
 
@@ -184,7 +126,7 @@ div {
     width: 0%;
     height: 100%;
     display: block;
-    background:  rgb(129, 185, 225);
+    background: rgb(129, 185, 225);
     position: absolute;
     -ms-transform: skewX(-20deg);
     -webkit-transform: skewX(-20deg);
@@ -197,7 +139,7 @@ div {
     -o-transition: all 0.7s cubic-bezier(0.77, 0, 0.175, 1);
     -webkit-transition: all 0.7s cubic-bezier(0.77, 0, 0.175, 1);
     transition: all 0.7s cubic-bezier(0.77, 0, 0.175, 1);
-  
+    box-shadow: 2px 0px 14px rgba(0, 0, 0, 0.6);
   }
 
   .button::after {
@@ -242,10 +184,10 @@ div {
 }
 
 .button-contact {
-  background:#161716;
-  border-bottom: 2.5px solid  #e19797;
+  background-color:#161716;
   color:  #FAFAFA;
   text-transform: uppercase;
+  border: 2.5px solid #e19797;
   padding: 10px;
   padding-left: 10px;
   margin-bottom: 40px;
@@ -255,12 +197,11 @@ div {
 
 .button-contact:hover {
   font-size: 19px;
+  background-color: transparent;
   border-bottom: 2.5px solid  #e19797;
   color: #FAFAFA;
   font-family: "Barlow Condensed", sans-serif;
 }
-
-
 
 html {
   line-height: 1.15;
@@ -334,8 +275,6 @@ h5 {
  
 }
 
-
-
 /**
    * Render the `main` element consistently in IE.
    */
@@ -356,7 +295,7 @@ p {
   line-height: 2;
   font-style: light300;
   font-size: 17px;
-  text-align: left;
+ 
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -411,7 +350,7 @@ a:focus {
 
 a:active {
   /* Selected link */
-  color:  rgb(129, 185, 225);
+  color: rgb(129, 185, 225);
 }
 
 /**
@@ -764,10 +703,9 @@ template {
 }
 
 .logo {
-  max-width: 250px;
+  max-width: 150px;
   text-align: center;
-  padding: 0px;
-  margin-right: 480px;
+  padding: 30px;
 }
 
 .profilepic {
@@ -783,7 +721,7 @@ template {
 header {
   background-color: #9c3c5c;
   position: relative;
-  border-bottom: 3px solid #FAFAFA;
+  border-bottom: 3px solid  #FAFAFA;
   box-shadow: 0px 1px 5px 0px;
   /* position: ; */
   width: 100%;
@@ -798,9 +736,20 @@ nav > ul {
   font-size: 17px;
 }
 
+/* nav>ul>li>a {
+    : visited
+} */
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  text-align: right;
+  font-weight: 700;
+  width: 100%;
+}
 
 .nav > li > a {
-  color: #f8f8f8;
+  color: #FAFAFA;
 }
 
 .css-box-shadow {
@@ -893,6 +842,7 @@ selector {
     width: 80%;
 }
 
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -903,16 +853,6 @@ Medium devices (640px and larger)
     padding: 10px 0 13px;
   }
 
-  h1 {
-    font-size: 14px;
-  }
-
-  .navtoggle.responsive li {
-    display: block;
-    padding: 10px 0;
-    font-size: 18px;
-    border-top: 1px solid #FAFAFA;
-  }
   nav {
     width: auto;
     float: right;
@@ -946,6 +886,10 @@ Medium devices (640px and larger)
     width: auto;
     float: right;
     margin-top: 4px;
+  }
+
+  h1 {
+    font-size: 14px;
   }
 
   li {
@@ -989,54 +933,20 @@ Large devices (1024px or larger)
     padding: 10px 0 13px;
   }
 
-  header {
-    text-align: unset;
-    padding: 10px 0 13px;
-  }
-
-  h1 {
-    font-size: 14px;
-  }
-  
-  .navtoggle.responsive li {
-    display: block;
-    padding: 10px 0;
-    font-size: 18px;
-    border-top: 1px solid #FAFAFA;
-  }
-  nav {
-    width: auto;
-    float: right;
-  }
-
-  nav > ul > li {
-    display: inline-block;
-  }
-
-  .navtoggle li:not(:last-child) {
-    display: inline-block;
-  }
-
-  .navtoggle li:last-child {
-    display: none;
-  }
-
   .container {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
   }
 
-  .logo {
-    max-width: 250px;
-    text-align: center;
-    padding: 30px;
-  }
-
   nav {
     width: auto;
     float: right;
     margin-top: 4px;
+  }
+
+  h1 {
+    font-size: 14px;
   }
 
   li {
@@ -1055,10 +965,12 @@ Large devices (1024px or larger)
     margin-top: 0;
   }
 
-  .col-md-6 {
+  .col-lg-5 {
     width: 40%;
-    padding: 10px;
-    /* margin-top: 50px; */
+  }
+
+  .col-lg-7 {
+    width: 50%;
   }
 
   [class*="col-"] {
@@ -1072,60 +984,33 @@ Large devices (1024px or larger)
   }
 }
 
+.nav-bar{
+  word-spacing: 40px;
+  font-size: 20px;
+  font-family: arial;
+}
+
+.nav-bar ul li a{
+  text-decoration: none;
+  color: white;
+}
+
+.nav-bar ul li{
+  display: inline-block;
+  -webkit-transition: border 1s, border-radius 1s, padding 1s, background-color 1s, color 1s;
+}
+
+.nav-bar ul li:hover{
+  border-bottom: 2px solid rgb(248, 242, 247);
+  border-radius: 10%;
+  padding: 10px;
+  background-color: #7698ed;
+  color: white;
+}
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
-}
-
-.container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-nav {
-  width: auto;
-  float: right;
-  margin-top: 4px;
-}
-
-h1 {
-  font-size: 14px;
-}
-
-li {
-  font-family: "Barlow Condensed", sans-serif;
-  font-style: light300;
-  font-size: 17px;
-  margin-top: 2px;
-}
-
-#hero span {
-  text-align: center;
-  display: block;
-}
-
-#about-page h3 {
-  margin-top: 0;
-}
-
-.col-lg-5 {
-  width: 40%;
-}
-
-.col-lg-7 {
-  width: 50%;
-}
-
-[class*="col-"] {
-  float: left;
-}
-
-.row:after {
-  content: "";
-  clear: both;
-  display: table;
 }
 
 /* ==============================
@@ -1134,53 +1019,3 @@ Extra-large devices (1920px or larger)
 @media only screen and (min-width: 1920px) {
 }
 
-
-.container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-nav {
-  width: auto;
-  float: right;
-  margin-top: 4px;
-}
-
-h1 {
-  font-size: 14px;
-}
-
-li {
-  font-family: "Barlow Condensed", sans-serif;
-  font-style: light300;
-  font-size: 17px;
-  margin-top: 2px;
-}
-
-#hero span {
-  text-align: center;
-  display: block;
-}
-
-#about-page h3 {
-  margin-top: 0;
-}
-
-.col-lg-5 {
-  width: 40%;
-}
-
-.col-lg-7 {
-  width: 50%;
-}
-
-[class*="col-"] {
-  float: left;
-}
-
-.row:after {
-  content: "";
-  clear: both;
-  display: table;
-}
