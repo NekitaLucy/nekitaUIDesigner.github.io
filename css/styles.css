@@ -985,9 +985,9 @@ Large devices (1024px or larger)
 }
 
 .nav-bar{
-  word-spacing: 40px;
-  font-size: 20px;
-  font-family: arial;
+  word-spacing: 5px;
+  font-size: 16px;
+ 
 }
 
 .nav-bar ul li a{
@@ -1002,20 +1002,16 @@ Large devices (1024px or larger)
 
 .nav-bar ul li:hover{
   border-bottom: 2px solid rgb(248, 242, 247);
-  border-radius: 10%;
-  padding: 10px;
-  background-color: #7698ed;
-  color: white;
+  border-radius: 5%;
+  padding: 5px;
+  background-color: #db8eee;
+  color: rgb(241, 149, 149);
 }
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
-@media only screen and (min-width: 1440px) {
-}
-
+/* @media only screen and (min-width: 1440px)  */
 /* ==============================
 Extra-large devices (1920px or larger)
 ================================= */
-@media only screen and (min-width: 1920px) {
-}
-
+/* @media only screen and (min-width: 1920px)  */
