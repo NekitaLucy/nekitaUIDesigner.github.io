@@ -13,6 +13,15 @@ SemiBold 600 */
   display: none;
 }
 
+.image-container {
+  display: flex;
+  justify-content: center; /* Horizontally center the image */
+  align-items: center; /* Vertically center the image */
+  padding-top: 0;
+}
+
+
+
 nav > ul {
   font-family: "Barlow Condensed", sans-serif;
   font-style: light300;
@@ -63,6 +72,12 @@ nav > ul > li > a {
 
 .navtoggle.responsive li:last-child {
   padding: 0 0 10px;
+}
+
+.button-container {
+  display: flex;
+  margin: 50px;
+  gap:  100px; /* Adjust the value to control the spacing between buttons */
 }
 
 .button:hover {
@@ -242,6 +257,7 @@ h1 {
   font-size: 30px;
   font-style: Bold;
   font-weight: 700;
+  
 }
 
 h2 {
@@ -249,6 +265,7 @@ h2 {
   font-size: 26px;
   font-style: SemiBold;
   font-weight: 700;
+  padding: 20px;
   /* padding: 10px; */
 }
 
@@ -294,7 +311,7 @@ p {
   font-family: "Barlow Condensed", sans-serif;
   line-height: 2;
   font-style: light300;
-  font-size: 17px;
+  font-size: 19px;
  
 }
 
