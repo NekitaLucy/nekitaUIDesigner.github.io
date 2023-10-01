@@ -95,12 +95,12 @@ div {
 
   .button {
     display: inline-block;
-    background-color: rgb(210, 210, 237);
+    background-color: rgb(187, 187, 234);
     font-size: 17px;
     text-decoration: none;
     padding: 15px;
     border-radius: 0.3px;
-    border-bottom: 2.5px solid #e19797;
+    border-bottom: 2.5px solid #faeeb1;
     transition: 0.2s opacity;
     margin-top: auto;
     font-family: "Barlow Condensed", sans-serif;
@@ -114,7 +114,7 @@ div {
     text-transform: uppercase;
     letter-spacing: 1px;
     text-align: center;
-    border: 2.5px solid  #e19797;
+    border: 2.5px solid  #faeeb1;
     border-radius: 0.5px;
     position: relative;
     overflow: hidden;
@@ -129,7 +129,7 @@ div {
 
   .button:hover {
     font-size: 17px;
-    border: 1px solid #bc8dc5;
+    border: 1px solid #faeeb1;
     color: #131312d3;
     font-family: "Barlow Condensed", sans-serif;
   }
@@ -141,7 +141,7 @@ div {
     width: 0%;
     height: 100%;
     display: block;
-    background: rgb(129, 185, 225);
+    background: rgb(217, 232, 242);
     position: absolute;
     -ms-transform: skewX(-20deg);
     -webkit-transform: skewX(-20deg);
@@ -164,7 +164,7 @@ div {
     width: 0%;
     height: 100%;
     display: block;
-    background: #e8f987;
+    background: #faeeb1;
     position: absolute;
     -ms-transform: skewX(-20deg);
     -webkit-transform: skewX(-20deg);
@@ -177,7 +177,7 @@ div {
     -moz-transition: all 0.4s cubic-bezier(0.2, 0.95, 0.57, 0.99);
     -o-transition: all 0.4s cubic-bezier(0.2, 0.95, 0.57, 0.99);
     transition: all 0.4s cubic-bezier(0.2, 0.95, 0.57, 0.99);
-    box-shadow: 2px 0px 14px rgba(255, 252, 252, 0.6);
+    box-shadow: 2px 0px 14px rgba(211, 219, 220, 0.797);
   }
 
   .button:hover::before,
@@ -202,7 +202,7 @@ div {
   background-color:#161716;
   color:  #FAFAFA;
   text-transform: uppercase;
-  border: 2.5px solid #e19797;
+  border: 2.5px solid #e9d780;
   padding: 10px;
   padding-left: 10px;
   margin-bottom: 40px;
@@ -213,7 +213,7 @@ div {
 .button-contact:hover {
   font-size: 19px;
   background-color: transparent;
-  border-bottom: 2.5px solid  #e19797;
+  border-bottom: 2.5px solid  #e9d780;
   color: #FAFAFA;
   font-family: "Barlow Condensed", sans-serif;
 }
@@ -736,10 +736,10 @@ template {
   }
 
 header {
-  background-color: #9c3c5c;
+  background-color: #7abfec;
   position: relative;
-  border-bottom: 3px solid  #FAFAFA;
-  box-shadow: 0px 1px 5px 0px;
+  border-bottom: 1px solid  #e3e3e3;
+  box-shadow: 0px 1px 2px 0px;
   /* position: ; */
   width: 100%;
   padding: 10px;
@@ -775,10 +775,10 @@ nav > ul > li > a {
   height: [object Object]px;
   background: #f8f8f8;
   position: relative;
-  border: solid #bdbdbd 1px;
+  border: solid #f2eded 1px;
   box-shadow: 0 7px 14px rgba(0, 0, 0, 0.3);
-  -webkit-box-shadow: 0 7px 14px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0 7px 14px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 7px 14px rgba(242, 235, 235, 0.3);
+  -moz-box-shadow: 0 7px 14px rgba(233, 230, 230, 0.3);
 }
 
 #hero {
@@ -802,13 +802,13 @@ nav > ul > li > a {
 
 #work .row {
   padding-bottom: 25px;
-  border-bottom: 1px solid #2a186b;
+  border-bottom: 1px solid #7DB1E1;
 }
 
 /* Footer styles */
 footer {
-  background-color: #b0637d;
-  color: #fffbfb;
+  background-color: #7abfec;
+  color: #222222;
   text-align: center;
 }
 
@@ -1021,8 +1021,8 @@ Large devices (1024px or larger)
   border-bottom: 2px solid rgb(248, 242, 247);
   border-radius: 5%;
   padding: 5px;
-  background-color: #db8eee;
-  color: rgb(241, 149, 149);
+  background-color: #f2d95b;
+  color: rgb(209, 153, 153);
 }
 /* ==============================
 X-large devices (1440px or larger)
